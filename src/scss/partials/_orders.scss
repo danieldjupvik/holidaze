@@ -1,0 +1,86 @@
+.backIconAbsolute {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+}
+.order-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.order-cards {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $cards-boxShadow;
+  border-radius: 10px;
+  margin: $global-spacing * 3 0px;
+  align-items: flex-start;
+  max-width: 500px;
+  height: auto;
+}
+.order-imageDiv {
+  height: 100%;
+  width: 100%;
+}
+.order-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
+  height: 364px;
+}
+.order-info {
+  padding: 14px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.order-title {
+  font-size: 18px;
+  display: block;
+  font-weight: $subheading;
+  font-family: $heading;
+  margin-bottom: 15px;
+}
+
+.order-created {
+  margin-bottom: 15px;
+}
+.order-dateDiv {
+  display: flex;
+  flex-direction: column;
+}
+.order-date {
+  font-size: 17px;
+}
+
+@media only screen and (min-width: $max-width) {
+  .order-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin-top: $global-spacing * 2;
+    margin-bottom: $global-spacing * 2;
+    width: 100%;
+  }
+  .order-cards {
+    flex-basis: calc(23% - 1px);
+    transition: 0.4s;
+    margin: 0px 0px 20px 20px;
+    align-items: flex-start;
+  }
+  .order-cards:nth-child(4n + 1) {
+    margin-left: 0px;
+  }
+  .order-image {
+    object-fit: cover;
+    height: 200px;
+  }
+  .order-imageDiv {
+    object-fit: cover;
+    height: 200px;
+  }
+}

@@ -1,0 +1,113 @@
+.adminPlace-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.adminPlace-cards {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: $cards-boxShadow;
+  border-radius: 10px;
+  margin: $global-spacing * 3 0px;
+  align-items: center;
+  max-width: 500px;
+  height: auto;
+}
+.adminPlace-imageDiv {
+  height: 100%;
+  width: 100%;
+}
+.adminPlace-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
+  height: 364px;
+}
+.adminPlace-info {
+  padding: 14px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.adminPlace-title {
+  font-size: 18px;
+  display: block;
+  font-weight: $subheading;
+  font-family: $heading;
+}
+.adminPlace-created {
+  margin-top: 12px;
+}
+.adminPlace-description {
+  margin-top: 12px;
+}
+.adminPlace-description p {
+  margin: 0;
+}
+.adminPlace-dateDiv {
+  display: flex;
+  flex-direction: column;
+}
+.adminPlace-rating {
+  margin-left: 5px;
+}
+.adminPlace-typeDiv {
+  margin-top: 12px;
+}
+.adminPlace-type {
+  opacity: 0.6;
+}
+.adminPlace-ratingDiv {
+  margin-top: $global-spacing;
+  display: flex;
+  align-items: center;
+}
+.adminPlace-number {
+  margin-left: 5px;
+  opacity: 0.7;
+}
+.searchPlaces-div {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: $global-spacing * 2;
+}
+
+.searchError {
+  margin-top: $global-spacing * 1.5;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: $max-width) {
+  .adminPlace-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin-top: $global-spacing * 2;
+    margin-bottom: $global-spacing * 2;
+    width: 100%;
+  }
+  .adminPlace-cards {
+    flex-basis: calc(23% - 1px);
+    transition: 0.4s;
+    margin: 0px 0px 20px 20px;
+    align-items: flex-start;
+  }
+  .adminPlace-cards:nth-child(4n + 1) {
+    margin-left: 0px;
+  }
+  .adminPlace-image {
+    object-fit: cover;
+    height: 200px;
+  }
+  .adminPlace-imageDiv {
+    object-fit: cover;
+    height: 200px;
+  }
+}
