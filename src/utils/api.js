@@ -9,4 +9,4 @@ const localApiUrl = 'http://localhost:1337';
 
 const hostedApiUrl = cors + 'https://holidaze-strapi.herokuapp.com';
 
-export const baseUrl = localApiUrl;
+export const baseUrl = hostedApiUrl;
