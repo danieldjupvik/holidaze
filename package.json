@@ -2,6 +2,9 @@
   "name": "project-exam-2-danieldjupvik",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@date-io/date-fns": "1.x",
     "@hookform/resolvers": "^1.3.5",
